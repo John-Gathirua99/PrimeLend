@@ -62,6 +62,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -188,6 +189,19 @@ DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 KYC_FACE_THRESHOLD  = 0.45    # lower = stricter matching
 KYC_FACE_MODEL      = "Facenet512"
 KYC_ENABLED         = True    # set False to disable face check
+
+
+
+
+
+
+
+
+
+
+
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 

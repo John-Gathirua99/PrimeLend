@@ -214,7 +214,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 
-postgresql://primelend_db_user:TiPLM5QpcTSB5j4QeU5hK3IWCm5RLqm3@dpg-d6qeuavgi27c73a1smc0-a/primelend_db
+
 
 
 

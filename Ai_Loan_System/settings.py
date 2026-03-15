@@ -180,7 +180,7 @@ EMAIL_HOST = "smtp.gmail.com"
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
-EMAIL_HOST_USER = "johngathirua@gmail.com"
+EMAIL_HOST_USER = os.environ.get("EMAIL_HOST_USER", "johngathirua@gmail.com")
 EMAIL_HOST_PASSWORD = "skiovbwqjiwmwocl"
 
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
@@ -229,3 +229,6 @@ SECURE_SSL_REDIRECT = False
 SESSION_COOKIE_SECURE = False
 CSRF_COOKIE_SECURE = False
 CSRF_TRUSTED_ORIGINS = ['https://primelend.onrender.com']
+
+
+
